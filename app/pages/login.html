@@ -5,12 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar secion</title>
+    <link rel="stylesheet" href="styel.css">
+    <script src="login.js" defer></script>
 </head>
 
 <body>
-    <h1>Prueba</h1>
-    <link rel="stylesheet" href="styel.css">
-    <script src="login.js" defer></script>
+    <main>
+        <div class="form-container">
+            <h1>Iniciar secion</h1>
+            <p>Ingresa tus credenciles para acceder al area de administracion</p>
+            <form id="login-form">
+                <label for="user" class="sr-only">User</label>
+                <input type="text" name="user" id="user" placeholder="Nombre de usuario">
+                <label for="password" class="sr-only">Password</label>
+                <input type="password" name="password" id="password" placeholder="Contraseña">
+                <button type="submit">Iniciar secion</button>
+                <p class="error escondido">Error al iniciar secion</p>
+            </form>
+            <p>No tienes cuenta aun? - <a href="/register">Crear cuenta</a></p>
+
+        </div>
+    </main>
 </body>
 
 </html>
